@@ -1,5 +1,5 @@
 
--- Query to use to for baseball_statdium analysis
+-- Purpose: Base dataset for identifying best batter game per ballpark
 
 SELECT atbats.g_id, 
        atbats.ab_id,
