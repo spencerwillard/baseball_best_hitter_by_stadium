@@ -2,15 +2,17 @@
 
 ---
 
-## Example Output
+### Example Output
 
-Top-performing hitter at each MLB ballpark based on custom scoring:
+Top single-game hitting performance at each MLB ballpark using a custom scoring metric.
 
 ![Best hitter by ballpark](images/results_table_image.png)
 
+**Top performance:** Didi Gregorius at Yankee Stadium (10 performance points)
+
 ---
 
-**Project Overview**
+### Project Overview
 
 This project analyzes MLB at-bat data to identify the best single-game hitting performance at each ballpark using a custom scoring metric.
 
@@ -18,13 +20,13 @@ The goal is to transform raw at-bat data into meaningful insights by aggregating
 
 ---
 
-**Objective**
+### Objective
 
 Determine which batter had the best single-game performance at each MLB ballpark.
 
 ---
 
-**Data**
+### Data
 
 - Source: Sample of 2018 MLB Statcast-style data  
 - Tables used:
@@ -36,7 +38,7 @@ Each row in the dataset represents a single at-bat.
 
 ---
 
-**Methodology**
+## Methodology
 
 1. Data Extraction
 
@@ -71,7 +73,7 @@ Rationale:
 
 ---
 
-**Results**
+## Results
 
 The final output includes:
 
@@ -97,7 +99,7 @@ This identifies the top offensive performance at each stadium in the dataset.
 
 ---
 
-**Tech Stack**
+## Tech Stack
 
 - Python (pandas)  
 - SQL (PostgreSQL)  
@@ -106,44 +108,40 @@ This identifies the top offensive performance at each stadium in the dataset.
 
 ---
 
-**How to Run**
+## How to Run
 
 1. Clone the repository:
-
-git clone <your-repo-url>
-cd mlb_best_hitter_by_ballpark
+   - `git clone <your-repo-url>`
+   - `cd mlb_best_hitter_by_ballpark`
 
 2. Create a virtual environment:
-
-python3 -m venv .venv
-source .venv/bin/activate
+   - `python3 -m venv .venv`
+   - `source .venv/bin/activate`
 
 3. Install dependencies:
-
-python -m pip install -r requirements.txt
+   - `python -m pip install -r requirements.txt`
 
 4. Set up environment variables:
+   - Create a `.env` file with:
+     - `DB_USER=your_username`
+     - `DB_PASSWORD=your_password`
+     - `DB_HOST=localhost`
+     - `DB_PORT=5432`
+     - `DB_NAME=your_database`
 
-Create a .env file with the following:
-
-DB_USER=your_username
-DB_PASSWORD=your_password
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=your_database
-
-5. Launch the notebook
+5. Launch the notebook:
+   - `notebooks/mlb_best_hitter_by_ballpark.ipynb`
 
 ---
 
-**Key Learnings**
+## Key Learnings
 
 - Using groupby and aggregation to transform data grain  
 - Ranking within groups using sorting and selection  
 - Feature engineering to create meaningful performance metrics  
 - Managing database connections with SQLAlchemy and environment variables  
 
-**Future Improvements**
+## Future Improvements
 
 - Expand to a full-season dataset  
 - Incorporate advanced metrics (e.g., total bases, OPS)  
@@ -151,7 +149,6 @@ DB_NAME=your_database
 - Compare player performance across different environments
 
 ---
-
-**Author**
+## Author
 
 Spencer Willard
