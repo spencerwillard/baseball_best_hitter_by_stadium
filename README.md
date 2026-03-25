@@ -2,6 +2,14 @@
 
 ---
 
+## Example Output
+
+Top-performing hitter at each MLB ballpark based on custom scoring:
+
+![Best hitter by ballpark](images/final_output.png)
+
+---
+
 **Project Overview**
 
 This project analyzes MLB at-bat data to identify the best single-game hitting performance at each ballpark using a custom scoring metric.
