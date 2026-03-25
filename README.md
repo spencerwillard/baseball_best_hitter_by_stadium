@@ -6,7 +6,7 @@
 
 Top-performing hitter at each MLB ballpark based on custom scoring:
 
-![Best hitter by ballpark](images/final_output.png)
+![Best hitter by ballpark](images/results_table_image.png)
 
 ---
 
